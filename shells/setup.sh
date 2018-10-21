@@ -2,6 +2,8 @@
 
 # homebrew のインストール
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew upgrade
 
 # app のインストール
 brew cask install visual-studio-code
@@ -46,6 +48,13 @@ if [ ! -f $(brew --prefix)/etc/bash_completion ]; then
     echo 'source /usr/local/etc/bash_completion.d/git-prompt.sh' >> ~/.bash_profile
     echo 'source /usr/local/etc/bash_completion.d/git-completion.bash' >> ~/.bash_profile
 fi
+brew install readline
+
+# python
+pip install pipenv
+
+# go
+go get -u github.com/golang/dep/cmd/dep
 
 # ssh
 ssh-keygen
