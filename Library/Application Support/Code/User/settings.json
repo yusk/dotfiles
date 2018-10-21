@@ -1,0 +1,60 @@
+{
+    "go.buildOnSave": true,
+    "go.lintOnSave": true,
+    "go.vetOnSave": true,
+    "go.buildFlags": [],
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.formatOnSave": true,
+    "go.formatTool": "goimports",
+    "go.goroot": "/usr/local/Cellar/go/1.11/libexec",
+    "go.gopath": "/Users/yusk/strage/go",
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    "python.venvPath": ".venv",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "python.formatting.provider": "yapf",
+    "python.jediEnabled": false,
+    "python.linting.lintOnSave": true,
+    "window.zoomLevel": 1,
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[vue]": {
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[markdown]":  {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true
+    },
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.formatOnType": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+    },
+    "[solidity]": {
+        "editor.tabSize": 2,
+    },
+    "vs-kubernetes": {
+        "vs-kubernetes.kubectl-path": "/Users/yusk/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.helm-path": "/Users/yusk/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.draft-path": "/Users/yusk/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+        "vs-kubernetes.minikube-path": "/Users/yusk/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "solidity.linter": "solium",
+    "solidity.soliumRules": {
+        "quotes": ["error", "double"],
+        "indentation": ["error", 2]
+    },
+}

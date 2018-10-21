@@ -1,10 +1,12 @@
+#!/bin/bash
+
 # homebrew のインストール
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # app のインストール
-# brew cask install visual-studio-code
-# brew cask install homebrew/cask-versions/docker-edge
-# brew cask install slack
+brew cask install visual-studio-code
+brew cask install homebrew/cask-versions/docker-edge
+brew cask install slack
 
 # anyenv
 if [ ! -e ~/.anyenv ]; then
@@ -19,8 +21,6 @@ if [ ! -e ~/.anyenv ]; then
     pyenv install 3.6.6
 fi
 
-
-
 # tool のインストール
 if [ ! -f $(brew --prefix)/etc/bash_completion ]; then
     brew install bash-completion
@@ -33,6 +33,5 @@ if [ ! -f $(brew --prefix)/etc/bash_completion ]; then
     echo 'source /usr/local/etc/bash_completion.d/git-completion.bash' >> ~/.bash_profile
 fi
 
-
 # ssh
-# ssh-keygen
+ssh-keygen
