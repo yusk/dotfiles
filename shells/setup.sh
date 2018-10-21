@@ -30,6 +30,9 @@ if [ ! -e ~/.anyenv ]; then
     source ~/.bash_profile
     goenv install 1.11.1
     goenv global 1.11.1
+    echo "export GOROOT=`which go`" >> ~/.bash_profile
+    echo 'export GOPATH=$HOME/strage/go' >> ~/.bash_profile
+    echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bash_profile
 fi
 
 # tool のインストール
