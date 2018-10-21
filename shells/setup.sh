@@ -16,9 +16,20 @@ if [ ! -e ~/.anyenv ]; then
     mkdir -p $(anyenv root)/plugins
     git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
     git clone https://github.com/znz/anyenv-git.git $(anyenv root)/plugins/anyenv-git
+    source ~/.bash_profile
+
+    # python
     anyenv install pyenv
+    source ~/.bash_profile
     pyenv install 2.7.15
     pyenv install 3.6.6
+    pyenv global 3.6.6
+
+    # go
+    anyenv install goenv
+    source ~/.bash_profile
+    goenv install 1.11.1
+    goenv global 1.11.1
 fi
 
 # tool のインストール
