@@ -9,6 +9,7 @@ brew upgrade
 brew cask install visual-studio-code
 brew cask install homebrew/cask-versions/docker-edge
 brew cask install slack
+brew cask install google-chrome
 
 # anyenv
 if [ ! -e ~/.anyenv ]; then
